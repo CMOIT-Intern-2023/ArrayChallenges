@@ -1,0 +1,15 @@
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/bin/Debug/net6.0/ArrayLooping
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/bin/Debug/net6.0/ArrayLooping.deps.json
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/bin/Debug/net6.0/ArrayLooping.runtimeconfig.json
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/bin/Debug/net6.0/ArrayLooping.dll
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/bin/Debug/net6.0/ArrayLooping.pdb
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.csproj.AssemblyReference.cache
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.AssemblyInfoInputs.cache
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.AssemblyInfo.cs
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.csproj.CoreCompileInputs.cache
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.dll
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/refint/ArrayLooping.dll
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.pdb
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ArrayLooping.genruntimeconfig.cache
+/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/Debug/net6.0/ref/ArrayLooping.dll
