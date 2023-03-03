@@ -5,7 +5,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Please enter the size of array");
+        // second looping
+        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
         int arraySize =Convert.ToInt32(Console.ReadLine());
 
         double[] inputNumber = new double[arraySize];
