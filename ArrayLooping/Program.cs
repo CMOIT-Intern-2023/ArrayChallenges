@@ -1,34 +1,96 @@
 ﻿using System.Linq;
+using System.Collections.Generic;
 namespace ArrayLooping;
 class Program
 {
     static void Main(string[] args)
     {
         // master
-        int[] inputNumber = new int[5];
+        Console.WriteLine("Please enter the size of array");
+        int arraySize = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("You can enter 5 integer numbers \n");
-            
-        for(int i=0; i< inputNumber.Length; i++)
+        double[] inputNumber = new double[arraySize];
+
+        Console.Write("You can enter numbers \n");
+
+        for (int i = 0; i < inputNumber.Length; i++)
         {
             Console.Write("Enter a number: ");
-            inputNumber[i] = Convert.ToInt32(Console.ReadLine());
+            inputNumber[i] = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("You entered " + inputNumber[i] + "\n");
-                
+            Console.WriteLine("You entered " + inputNumber[i] + "\n");
+
+
         }
 
         double sum = inputNumber.Sum();
-        Console.WriteLine("The sum of elements is : " + sum);
-        
+        Console.WriteLine("\nThe sum of elements is : " + sum);
+
         Console.Write("The negative values are : ");
 
-        foreach(int negativeNum in inputNumber)
+        int numCount = 0;
+        var negCount = 0;
+        while (numCount < inputNumber.Length)
         {
-            if(negativeNum<0)
+            if (inputNumber[numCount] < 0)
             {
-                Console.Write(negativeNum + ", ");
+                double negativeValues = inputNumber[numCount];
+                Console.Write(negativeValues + ",");
+                negCount++;
             }
+            numCount++;
+        }
+
+        Console.WriteLine("\nCount of negative value is " + negCount);
+
+        Console.Write("\nThe even numbers are ");
+
+        var loopCount = 0;
+        var evenCount = 0;
+        foreach (double evenNumbers in inputNumber)
+        {
+            double resultEven = inputNumber[loopCount] % 2;
+            if (resultEven == 0.00)
+            {
+
+                Console.Write(evenNumbers + ",");
+                evenCount++;
+            }
+            loopCount++;
+        }
+        Console.WriteLine("\nThe number of even numbers is " + evenCount);
+
+        Console.Write("\nThe odd numbers are ");
+
+        var forLoopCount = 0;
+        var oddCount = 0;
+        foreach (double oddNumbers in inputNumber)
+        {
+            double resultOdd = inputNumber[forLoopCount] % 2;
+            if (resultOdd >= 1.00)
+            {
+
+                Console.Write(oddNumbers + ",");
+                oddCount++;
+            }
+            forLoopCount++;
+        }
+
+        var inputNumlist = new List<double>();
+        inputNumlist.AddRange(inputNumber);
+
+
+        inputNumlist.RemoveAt(3);
+
+        Console.WriteLine("\nThe number of odd numbers is " + oddCount);
+        Console.WriteLine("The maximum value is " + inputNumber.Max());
+        Console.WriteLine("The minimim value is " + inputNumber.Min());
+        Console.Write("The reverse order of array is : ");
+        Array.Reverse(inputNumber);
+
+        foreach (double r in inputNumber)
+        {
+            Console.Write(r + ",");
         }
         Console.ReadLine();
     }
