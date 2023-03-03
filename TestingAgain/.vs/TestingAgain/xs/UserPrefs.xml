@@ -1,20 +1,20 @@
-﻿<Properties StartupConfiguration="{52E0BA38-1B93-4B2B-811A-CE5CB57ADC03}|Default">
+﻿<Properties StartupConfiguration="{5078E932-D848-4C8A-842C-6DA3399AC4D2}|Default">
+  <MonoDevelop.Ide.ItemProperties.TestingAgain PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ArrayLooping/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestingAgain/Program.cs">
     <Files>
-      <File FileName="ArrayLooping/Program.cs" Line="12" Column="1" />
+      <File FileName="TestingAgain/Program.cs" Line="9" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ArrayLooping" expanded="True">
-            <Node name="ArrayLooping" expanded="True" />
+          <Node name="TestingAgain" expanded="True">
+            <Node name="TestingAgain" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ArrayLooping PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
