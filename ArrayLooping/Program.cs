@@ -8,7 +8,11 @@ class Program
         // master
         Console.WriteLine("Please enter the size of array");
         Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
-        int arraySize = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
+        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
+        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
+        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
+        int arraySize =Convert.ToInt32(Console.ReadLine());
 
         double[] inputNumber = new double[arraySize];
 
