@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // master
         int[] inputNumber = new int[5];
 
         Console.Write("You can enter 5 integer numbers \n");
