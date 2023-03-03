@@ -15,7 +15,6 @@ class Program
             inputNumber[i] = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("You entered " + inputNumber[i] + "\n");
-
                 
         }
 

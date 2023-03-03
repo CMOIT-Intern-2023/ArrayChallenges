@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj": {}
+    "/Users/pttk_snow/Desktop/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj": {}
   },
   "projects": {
-    "/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj": {
+    "/Users/pttk_snow/Desktop/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj",
+        "projectUniqueName": "/Users/pttk_snow/Desktop/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj",
         "projectName": "ArrayLooping",
-        "projectPath": "/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj",
+        "projectPath": "/Users/pttk_snow/Desktop/Projects/ArrayLooping/ArrayLooping/ArrayLooping.csproj",
         "packagesPath": "/Users/pttk_snow/.nuget/packages/",
-        "outputPath": "/Users/pttk_snow/Projects/ArrayLooping/ArrayLooping/obj/",
+        "outputPath": "/Users/pttk_snow/Desktop/Projects/ArrayLooping/ArrayLooping/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pttk_snow/.nuget/NuGet/NuGet.Config"
