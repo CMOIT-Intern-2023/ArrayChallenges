@@ -7,11 +7,7 @@ class Program
     {
         // master
         Console.WriteLine("Please enter the size of array");
-        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
-        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
-        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
-        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
-        Console.WriteLine("Please enter the size of array. Pleaseeeeeee.");
+       
         int arraySize =Convert.ToInt32(Console.ReadLine());
 
         double[] inputNumber = new double[arraySize];
@@ -24,8 +20,6 @@ class Program
             inputNumber[i] = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("You entered " + inputNumber[i] + "\n");
-
-
         }
 
         double sum = inputNumber.Sum();
@@ -85,17 +79,42 @@ class Program
         inputNumlist.AddRange(inputNumber);
 
 
-        inputNumlist.RemoveAt(3);
+        //inputNumlist.RemoveAt(3);
 
         Console.WriteLine("\nThe number of odd numbers is " + oddCount);
+        Console.WriteLine();
         Console.WriteLine("The maximum value is " + inputNumber.Max());
+        Console.WriteLine();
         Console.WriteLine("The minimim value is " + inputNumber.Min());
+        Console.WriteLine();
         Console.Write("The reverse order of array is : ");
         Array.Reverse(inputNumber);
 
         foreach (double r in inputNumber)
         {
             Console.Write(r + ",");
+        }
+        Console.WriteLine("\nPlease enter the number you want to search");
+        double searchNum = Convert.ToInt32(Console.ReadLine());
+        if (inputNumlist.Contains(searchNum))
+        {
+            Console.WriteLine("Your search was found");
+        }
+        else
+        {
+            Console.WriteLine("Your search was not found");
+        }
+        ;
+
+        Console.WriteLine("Enter the index number you want to delete");
+        int indexNo = Convert.ToInt32(Console.ReadLine());
+        if(indexNo < inputNumber.Length)
+        {
+            inputNumlist.RemoveAt(indexNo);
+            foreach(var r in inputNumlist)
+            {
+                Console.Write(r + " , ");
+            }
         }
         Console.ReadLine();
     }
