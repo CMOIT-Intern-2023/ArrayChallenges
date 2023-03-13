@@ -1,0 +1,16 @@
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\bin\Debug\net5.0\arrayexercise.exe
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\bin\Debug\net5.0\arrayexercise.deps.json
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\bin\Debug\net5.0\arrayexercise.runtimeconfig.json
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\bin\Debug\net5.0\arrayexercise.runtimeconfig.dev.json
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\bin\Debug\net5.0\arrayexercise.dll
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\bin\Debug\net5.0\arrayexercise.pdb
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.AssemblyInfo.cs
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.dll
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\refint\arrayexercise.dll
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.pdb
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\arrayexercise.genruntimeconfig.cache
+C:\Users\hp\source\repos\arrayexercise\arrayexercise\obj\Debug\net5.0\ref\arrayexercise.dll
