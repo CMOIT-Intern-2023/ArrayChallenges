@@ -1,0 +1,15 @@
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\bin\Debug\net6.0\ArrayChallenge.exe
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\bin\Debug\net6.0\ArrayChallenge.deps.json
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\bin\Debug\net6.0\ArrayChallenge.runtimeconfig.json
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\bin\Debug\net6.0\ArrayChallenge.dll
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\bin\Debug\net6.0\ArrayChallenge.pdb
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.csproj.AssemblyReference.cache
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.GeneratedMSBuildEditorConfig.editorconfig
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.AssemblyInfoInputs.cache
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.AssemblyInfo.cs
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.csproj.CoreCompileInputs.cache
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.dll
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\refint\ArrayChallenge.dll
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.pdb
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ArrayChallenge.genruntimeconfig.cache
+D:\YMT\My Jobs\CMHL\C#\ArrayChallenge\obj\Debug\net6.0\ref\ArrayChallenge.dll
