@@ -5,7 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        // master
+        bool userDesireContinue= true;
+        while(userDesireContinue)
+        {
+            
         Console.WriteLine("Please enter the size of array");
        
         int arraySize =Convert.ToInt32(Console.ReadLine());
@@ -16,10 +19,25 @@ class Program
 
         for (int i = 0; i < inputNumber.Length; i++)
         {
+            bool success = true;
+            
+            while(success)
+            {
+            int value;
+            string arrayValue=Console.ReadLine();
             Console.Write("Enter a number: ");
-            inputNumber[i] = Convert.ToDouble(Console.ReadLine());
-
+            if(int.TryParse(arrayValue, out value))
+            {
+                inputNumber[i] = value;
+                success= false;
+                    
+            }
+            else
+                success= true;
+            }
+            
             Console.WriteLine("You entered " + inputNumber[i] + "\n");
+            Console.WriteLine("Please enter a number");
         }
 
         double sum = inputNumber.Sum();
@@ -104,7 +122,7 @@ class Program
         {
             Console.WriteLine("Your search was not found");
         }
-        ;
+        
 
         Console.WriteLine("Enter the index number you want to delete");
         int indexNo = Convert.ToInt32(Console.ReadLine());
@@ -115,8 +133,25 @@ class Program
             {
                 Console.Write(r + " , ");
             }
+        
         }
-        Console.ReadLine();
-    }
+        Console.WriteLine("Do you want to run the program? Y for yes, N for no");
+        char userDesire =Convert.ToChar(Console.ReadLine());
+        if(userDesire=='Y')
+        {
+            userDesireContinue=true;
+        }  
+        else
+        {
+            userDesireContinue=false;
+        }
+        }
+        }
+  
+        // Console.WriteLine("Do you want to run the program? Y for yes, N for no");
+        // char userDesire =Convert.ToChar(Console.ReadLine());
+        // master
+        
+    
 }
 
