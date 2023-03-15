@@ -31,8 +31,8 @@ namespace Exercise {
                 Console.Write(array[i] + " , " ); 
             }
          }
-    Console.Write("\n");
-            int count = 0;
+         Console.Write("\n");
+           int count = 0;
           for (int i = 0; i < num; i++)
          {
             if (array[i] < 0)
@@ -101,14 +101,20 @@ namespace Exercise {
 
             Console.WriteLine("Enter Number to delete ");
             int numberOfDelete =  Convert.ToInt32(Console.ReadLine());
-            // var numbers= new List<int>();
-            //     numbers.AddRange(array);
-            number.RemoveAt(numberOfDelete);
-            Console.WriteLine("Deleted index number :" + numberOfDelete);
-            Console.Write("New array is :");
-            foreach (var newList in number)
+            
+            if (number.Contains(numberOfDelete))
             {
-                Console.Write( newList + " ");
+                number.Remove(numberOfDelete);
+                Console.WriteLine("Deleted index number :" + numberOfDelete);
+                Console.Write("New array is :");
+                foreach (var newList in number)
+                {
+                    Console.Write( newList + " ");
+                }
+            }
+            else
+            {
+                Console.WriteLine("The number you want to delete is not exist in array");
             }
     
         Console.WriteLine();
