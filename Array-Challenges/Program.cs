@@ -7,28 +7,44 @@ namespace Array_Challenges
     {
         static void Main(string[] args)
         {
-            Console.Write("Input Your Numbers Array: ");
-            int[] ary = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
+            do
+            {
+                try
+                {
 
-            Console.Write("Input a number to search and delete: ");
-            int num = int.Parse(Console.ReadLine());
+                    Console.Write("Input Your Numbers Array: ");
+                    int[] ary = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToArray();
 
-            Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine("Your Array => " + string.Join(" ", ary) + "\n");
+                    Console.Write("Input a number to search and delete: ");
+                    int num = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Sum of Numbers: " + ary.Sum());
+                    Console.WriteLine("-----------------------------------------------");
+                    Console.WriteLine("Your Array => " + string.Join(" ", ary) + "\n");
 
-            Console.WriteLine("Count of Negative Numbers: " + ary.Count(x => x < 0));
+                    Console.WriteLine("Sum of Numbers: " + ary.Sum());
 
-            Console.WriteLine("Max Number: " + ary.Max() + " \nMin Number: " + ary.Min());
+                    Console.WriteLine("Count of Negative Numbers: " + ary.Count(x => x < 0));
 
-            Console.WriteLine("Count of Even: " + ary.Count(x => x % 2 == 0) + " \nCount of Odd: " + ary.Count(x => x % 2 != 0));
+                    Console.WriteLine("Max Number: " + ary.Max() + " \nMin Number: " + ary.Min());
 
-            Console.WriteLine("Reverse Ary: " + string.Join(" ", ary.Reverse()));
+                    Console.WriteLine("Count of Even: " + ary.Count(x => x % 2 == 0) + " \nCount of Odd: " + ary.Count(x => x % 2 != 0));
 
-            Console.WriteLine($"Search {num}: {ary.Contains(num)} ");
+                    Console.WriteLine("Reverse Ary: " + string.Join(" ", ary.Reverse()));
 
-            Console.WriteLine($"Delete {num}: {string.Join(" ", ary.Where(x => x != num))} ");
+                    Console.WriteLine($"Search {num}: {ary.Contains(num)} ");
+
+                    Console.WriteLine($"Delete {num}: {string.Join(" ", ary.Where(x => x != num))} ");
+
+                    System.Console.Write("Continue? (C to rerun the program | anykey to exit): ");
+                    if (Console.ReadLine().ToLower() != "r") break;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+
+            } while (true);
         }
+
     }
 }
