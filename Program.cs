@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 class FirstChallenge
@@ -7,97 +6,92 @@ class FirstChallenge
     public static void Main()
     {
         Console.WriteLine("How many numbers do you want to type in?");
-        int totalNumbers = Convert.ToInt32(Console.ReadLine());
-        int[] numbers = new int[totalNumbers];
-        List<int> negNum = new List<int>();
-        List<int> evenNum = new List<int>();
-        List<int> oddNum = new List<int>();
-        float sum = 0f;
+        if (!int.TryParse(Console.ReadLine(), out int totalNumbers))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
+        else if (totalNumbers < 0)
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
 
-        Console.WriteLine($"Enter {totalNumbers} whole numbers");
+        int[] numbers = new int[totalNumbers];
         for (int i = 0; i < totalNumbers; i++)
         {
-            try
+            Console.WriteLine($"Enter number {i + 1} of {totalNumbers}:");
+            if (!int.TryParse(Console.ReadLine(), out int number))
             {
-                sum += numbers[i];
-                numbers[i] = Convert.ToInt32(Console.ReadLine());
-                if (numbers[i] < 0) negNum.Add(numbers[i]);
-                if (numbers[i] % 2 == 0) evenNum.Add(numbers[i]);
-                else oddNum.Add(numbers[i]);
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+                return;
             }
-            catch
-            {
-                Console.WriteLine("Hey...you must type whole number only");
-                Environment.Exit(0);
-            }
+            numbers[i] = number;
         }
 
         Console.WriteLine("--------------------------------");
+        Console.WriteLine("Your entered these numbers:");
+        Console.WriteLine(string.Join(", ", numbers));
 
-        // Numbers
-        Console.WriteLine("Your entered these numbers");
-        foreach (var number in numbers) Console.Write(number + " ");
-        Console.WriteLine("\n--------------------------------");
-
-        // Negative numbers
-        Console.WriteLine("Negative numbers are ");
-        foreach (var number in negNum) Console.Write(number + " ");
-        Console.WriteLine("\n--------------------------------");
-
-        // Sum of all numbers
-        Console.WriteLine("Sum of all numbers is \n" + numbers.Sum());
+        var negNum = numbers.Where(n => n < 0).ToList();
         Console.WriteLine("--------------------------------");
+        Console.WriteLine("Negative numbers are:");
+        Console.WriteLine(string.Join(", ", negNum));
 
-        // Count of negative numbers
-        Console.WriteLine("Count of negative numbers is \n" + negNum.Count);
+        var evenNum = numbers.Where(n => n % 2 == 0).ToList();
+        var oddNum = numbers.Where(n => n % 2 != 0).ToList();
         Console.WriteLine("--------------------------------");
+        Console.WriteLine($"Count of even numbers is {evenNum.Count}");
+        Console.WriteLine($"Count of odd numbers is {oddNum.Count}");
 
-        // Max & Min
-        Console.WriteLine("Maximum number is " + numbers.Max());
-        Console.WriteLine("Minimum number is " + numbers.Min());
         Console.WriteLine("--------------------------------");
+        Console.WriteLine($"Sum of all numbers is {numbers.Sum()}");
 
-        // Even number count and Odd number count
-        Console.WriteLine("Count of even numbers is " + evenNum.Count);
-        Console.WriteLine("Count of odd numbers is " + oddNum.Count);
         Console.WriteLine("--------------------------------");
+        Console.WriteLine($"Count of negative numbers is {negNum.Count}");
 
-        // Reverse of array
-        Array.Reverse(numbers);
-        Console.WriteLine("Reverse array is ");
-        foreach (var number in numbers) Console.Write(number + " ");
-        Console.WriteLine("\n--------------------------------");
+        Console.WriteLine("--------------------------------");
+        Console.WriteLine($"Maximum number is {numbers.Max()}");
+        Console.WriteLine($"Minimum number is {numbers.Min()}");
 
-        // Search element
-        Console.WriteLine("What number do you want to search");
-        int target = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("--------------------------------");
+        Console.WriteLine("Reverse array is:");
+        int[] reversedNumbers = new int[totalNumbers];
+        numbers.CopyTo(reversedNumbers, 0);
+        Array.Reverse(reversedNumbers);
+        Console.WriteLine(string.Join(", ", reversedNumbers));
+
+        Console.WriteLine("--------------------------------");
+        Console.WriteLine("What number do you want to search?");
+        if (!int.TryParse(Console.ReadLine(), out int target))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
+
         bool isExist = numbers.Contains(target);
-        if (isExist)
-        {
-            Console.WriteLine("Element found in the array");
-        }
-        else
-        {
-            Console.WriteLine("Element not found in the given array");
-        }
-        Console.WriteLine("--------------------------------");
+        Console.WriteLine(isExist ? "Element found in the array." : "Element not found in the given array.");
 
-        // Delete
-        Console.WriteLine("What number do you want to delete");
-        target = Convert.ToInt32(Console.ReadLine());
-        isExist = numbers.Contains(target);
-        if (isExist)
+        Console.WriteLine("--------------------------------");
+        Console.WriteLine("What number do you want to delete?");
+        if (!int.TryParse(Console.ReadLine(), out target))
         {
-            var numbersList = numbers.ToList();
-            numbersList.Remove(target);
-            Console.WriteLine("Element deleted.");
-            foreach (var number in numbersList) Console.Write(number + " ");
-            Console.WriteLine("\n--------------------------------");
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
+
+        if (numbers.Contains(target))
+        {
+            var numbersAfterDeletion = numbers.ToList();
+            numbersAfterDeletion.Remove(target);
+            Console.WriteLine($"Element {target} deleted.");
+            Console.WriteLine($"New array is: {string.Join(", ", numbersAfterDeletion)}");
         }
         else
         {
-            Console.WriteLine("Element not found in the given array");
-            Console.WriteLine("--------------------------------");
+            Console.WriteLine("Element not found in the given array.");
         }
+
+        Console.WriteLine("--------------------------------");
     }
 }
