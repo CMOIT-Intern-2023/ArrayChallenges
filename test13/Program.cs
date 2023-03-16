@@ -2,28 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace test_loop3
+namespace array
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             List<double> numbers = new List<double>();
-
-            //Console.WriteLine("Enter total number");
-            //int num = Int32.Parse(Console.ReadLine());
-
-            //// request number vertical 
-
-
-
-            //for (int i = 0; i < num; i++)
-            //{
-            //    Console.WriteLine("Enter number:");
-
-            //    int input = Int32.Parse(Console.ReadLine());
-            //    numbers.Add(input);
-            //}
 
             Console.WriteLine("Enter numbers");
 
@@ -71,7 +56,7 @@ namespace test_loop3
                 }
                 // check -1
 
-                if (n % 2 == 1 || n % 2 == -1 )
+                if (n % 2 == 1 || n % 2 == -1)
                 {
                     odd++;
                 }
@@ -87,51 +72,61 @@ namespace test_loop3
             // Array
 
             numbers.Reverse();
-            
+
 
             foreach (var item in numbers)
             {
 
                 Console.Write(" " + item);
 
-
             }
 
-            Console.WriteLine("\nEnter number to find in array");
-            int search = Int32.Parse(Console.ReadLine());
-            bool sea = numbers.Contains(search);
+            // ask untail want to  find
 
-            // ask untain find
-
-
-            if (sea)
+            while (true)
             {
-                Console.WriteLine("Element found in array");
-            }
-            else
-            {
-                Console.WriteLine("Element not found in array");
-            }
+                Console.WriteLine("\nEnter number to find in array");
+                int search = Int32.Parse(Console.ReadLine());
+                bool sea = numbers.Contains(search);
 
+                if (sea)
+                {
+                    Console.WriteLine("Element found in array");
+                }
+                else
+                {
+                    Console.WriteLine("Element not found in array");
+                }
+
+                Console.WriteLine("Do you wanna find more number y/n ?");
+
+                string ans = Console.ReadLine();
+
+                if ( ans == "n" || ans == "no")
+                {
+                    break;
+                }
+            }
 
 
             Console.WriteLine("Enter number to remove");
             int rme = Int32.Parse(Console.ReadLine());
 
-            numbers.Remove(rme);
-
+            for (int i = numbers.Count - 1; i >= 0; i--)
+            {
+                if (numbers[i] == rme)
+                {
+                    numbers.RemoveAt(i);
+                }
+            }
             Console.WriteLine("Remain Numbers");
-            foreach ( var rm in numbers )
+            foreach (var rm in numbers)
             {
                 Console.Write(" " + rm);
+
             }
-
-
-
-
-
         }
-        
+
 
     }
 }
