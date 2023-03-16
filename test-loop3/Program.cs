@@ -10,16 +10,30 @@ namespace test_loop3
         {
             List<double> numbers = new List<double>();
 
-            Console.WriteLine("Enter total number");
-            int num = Int32.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter total number");
+            //int num = Int32.Parse(Console.ReadLine());
 
-            for (int i = 0; i < num; i++)
+            //// request number vertical 
+
+
+
+            //for (int i = 0; i < num; i++)
+            //{
+            //    Console.WriteLine("Enter number:");
+
+            //    int input = Int32.Parse(Console.ReadLine());
+            //    numbers.Add(input);
+            //}
+
+            Console.WriteLine("Enter numbers");
+
+            string input = Console.ReadLine();
+
+            string[] numb = input.Split(' ');
+
+            foreach (var ou in numb)
             {
-                Console.WriteLine("Enter number:" +i );
-
-                int input = Int32.Parse(Console.ReadLine());
-                numbers.Add(input);
-
+                numbers.Add(Convert.ToDouble(ou));
             }
 
             int sum = 0;
@@ -55,8 +69,9 @@ namespace test_loop3
                 {
                     even++;
                 }
+                // check -1
 
-                if (n % 2 != 1)
+                if (n % 2 == 1 || n % 2 == -1 )
                 {
                     odd++;
                 }
@@ -84,22 +99,28 @@ namespace test_loop3
 
             Console.WriteLine("\nEnter number to find in array");
             int search = Int32.Parse(Console.ReadLine());
-            bool hasfive = numbers.Contains(search);
+            bool sea = numbers.Contains(search);
 
-            if (hasfive)
+            // ask untain find
+
+
+            if (sea)
             {
-                Console.WriteLine("Element fount in array");
+                Console.WriteLine("Element found in array");
             }
             else
             {
-                Console.WriteLine("Element not fount in array");
+                Console.WriteLine("Element not found in array");
             }
+
+
 
             Console.WriteLine("Enter number to remove");
             int rme = Int32.Parse(Console.ReadLine());
 
             numbers.Remove(rme);
 
+            Console.WriteLine("Remain Numbers");
             foreach ( var rm in numbers )
             {
                 Console.Write(" " + rm);
